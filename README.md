@@ -1,46 +1,27 @@
-# React + Vite
+# Boardgame Collection
 
-## RESTful API
+Boardgame Collection is a React-based web application that allows users to view, add, edit, and delete board games in their collection. It also includes user authentication and detailed information about each board game.
 
-CRUD - CREATE RETRIEVE UPDATE DELETE
-C - POST
-R - GET
-U - PUT/PATCH
-D - DELETE
+## Features
 
-<url-of-the-server>/api/v2/resource
+- **User Authentication**: Users can register, log in, and log out.
+- **Boardgame Cards**: Display a list of board games in a card format.
+- **Boardgame Details**: View detailed information about each board game.
+- **CRUD Operations**: Users can add, edit, and delete board games.
+- **Responsive Design**: Mobile-friendly layout.
 
-users:
+## Technologies Used
 
-GET   -> /users     -> list of all users
-GET   -> /users/:id -> one particular user
-POST  -> /users     -> create a user
-PUT   -> /users/:id -> update a user in an idempotent manner (replace the user in the DB with the user sent on the request body)
-PATCH  -> /users/:id -> updates part of the user
-DELETE -> /users/:id -> deletes the user
+- **React**: Frontend library for building user interfaces.
+- **React Router**: Library for routing in React applications.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **React Toastify**: Library for notifications.
+- **Vite**: Next generation frontend tooling.
+- **JSON Server**: Fake REST API for development.
 
-## Response codes of a RESTful API
-1xx -> Informational
-2xx -> Success
-3xx -> Redirect
-4xx -> Client Errors
-5xx -> Server Errors
+## Getting Started
 
-200 -> OK
-201 -> CREATED (response to POST)
-400 -> BAD REQUEST
-401 -> UNAUTHORIZED
-403 -> FORBIDDEN
-404 -> NOT FOUND
-// 418 -> I'M A TEAPOT
-405 -> METHOD NOT ALLOWED
-500 -> INTERNAL SERVER ERROR
-502 -> GATEWAY ERROR
+### Prerequisites
 
-GET -> we get a huge body of data
-POST/PUT/PATCH -> we get the created/updated resource
-DELETE -> no response body
-
-In case of errors:
-The response will have the proper status code and can have a response body with among other things the error message.
+- Node.js and npm installed on your machine.
 
